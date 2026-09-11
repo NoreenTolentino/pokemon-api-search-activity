@@ -1,0 +1,137 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #111;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1050px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #111;
+  border-radius: 25px;
+  outline: none;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.pokemon-card {
+  background-color: #fff;
+  border: 2px solid #111;
+  border-radius: 12px;
+  padding: 18px;
+  width: 220px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.card-header h2 {
+  font-size: 1.15rem;
+}
+
+.pokemon-id {
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.card-image {
+  text-align: center;
+  margin: 5px 0 10px;
+}
+
+.card-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.types-list {
+  margin-bottom: 12px;
+}
+
+.types-list .label, .attributes-grid small {
+  font-size: 0.7rem;
+  color: #555;
+  display: block;
+  font-weight: bold;
+}
+
+.badge-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.type-badge {
+  border: 1px solid #111;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.attributes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 0.85rem;
+  padding-top: 4px;
+}
+
+.attributes-grid p {
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.status-text {
+  text-align: center;
+  margin-top: 50px;
+}
